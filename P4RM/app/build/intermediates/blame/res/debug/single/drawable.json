@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/corentin/Projets/Android/Projets/P4RM/app/build/intermediates/res/merged/debug/drawable/tab_bg_unselected.xml",
+        "source": "/home/corentin/Projets/Android/Projets/P4RM/app/src/main/res/drawable/tab_bg_unselected.xml"
+    },
+    {
+        "merged": "/home/corentin/Projets/Android/Projets/P4RM/app/build/intermediates/res/merged/debug/drawable/tab_bg_pressed.xml",
+        "source": "/home/corentin/Projets/Android/Projets/P4RM/app/src/main/res/drawable/tab_bg_pressed.xml"
+    }
+]

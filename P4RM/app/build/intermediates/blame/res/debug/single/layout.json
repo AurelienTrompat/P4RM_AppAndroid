@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/corentin/Projets/Android/Projets/P4RM/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/home/corentin/Projets/Android/Projets/P4RM/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/corentin/Projets/Android/Projets/P4RM/app/build/intermediates/res/merged/debug/layout/tabs_bg.xml",
+        "source": "/home/corentin/Projets/Android/Projets/P4RM/app/src/main/res/layout/tabs_bg.xml"
+    }
+]

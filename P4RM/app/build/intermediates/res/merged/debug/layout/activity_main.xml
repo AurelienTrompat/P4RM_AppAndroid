@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="fr.geii.tours.iut.p4rm.MainActivity">
+
+    <TabHost
+        android:id="@+id/th"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llConnection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bConnect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/connect"
+                    android:textSize="32sp" />
+
+                <EditText
+                    android:id="@+id/etIP"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/bConnect"
+                    android:layout_centerHorizontal="true"
+                    android:ems="10"
+                    android:inputType="textNoSuggestions|number"
+                    android:maxLines="1"
+                    android:text="172.24.1.1"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/llConnection" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/tabManuel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <fr.geii.tours.iut.p4rm.PaintView
+                        android:id="@+id/pv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/canvas_margin"
+                        android:layout_toLeftOf="@+id/jv"
+                        android:background="#FFFFFFFF" />
+
+                    <TextView
+                        android:id="@+id/tvX"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/pv"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="50sp" />
+
+                    <TextView
+                        android:id="@+id/tvY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvX"
+                        android:layout_toRightOf="@+id/pv"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="50sp" />
+
+                    <Button
+                        android:id="@+id/bRP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvY"
+                        android:layout_toRightOf="@+id/pv"
+                        android:text="RAZ Position" />
+
+
+                    <fr.geii.tours.iut.p4rm.JoystickView
+                        android:id="@+id/jv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <ImageButton
+                        android:id="@+id/ibST"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/jv"
+                        android:layout_alignStart="@+id/jv"
+                        android:background="@drawable/sens_trigo_root" />
+
+                    <ImageButton
+                        android:id="@+id/ibSAT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/jv"
+                        android:layout_toEndOf="@+id/ibST"
+                        android:background="@drawable/sens_anti_trigo_root" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabAuto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabDebug"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvL1L"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Laser Gauche"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/tvL2L"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Laser Avant"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/tvL3L"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Laser Droit"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="30sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvL1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="50sp" />
+
+                        <TextView
+                            android:id="@+id/tvL2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="2"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="50sp" />
+
+                        <TextView
+                            android:id="@+id/tvL3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="3"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="50sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvAccL"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Accéléromètre"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/tvMagL"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Magnétomètre"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="30sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvAcc"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="3"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="50sp" />
+
+                        <TextView
+                            android:id="@+id/tvMag"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="4"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="50sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <ToggleButton
+                            android:id="@+id/tbEnUS"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="2"
+                            android:checked="true"
+                            android:textOff="Radar Off"
+                            android:textOn="Radar On"
+                            android:textSize="30sp" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:id="@+id/bRD"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_marginBottom="19dp"
+                            android:layout_weight="2"
+                            android:text="RAZ Défauts"
+                            android:textSize="30sp" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Servomoteur"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="30sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/tbEnServo"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="2"
+                            android:checked="false"
+                            android:textOff="Inactif"
+                            android:textOn="Actif"
+                            android:textSize="30sp" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <SeekBar
+                            android:id="@+id/sbServo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:max="120" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>

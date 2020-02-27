@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/corentin/Projets/Android/Projets/P4RM/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/sens_trigo_root.xml",
+        "source": "/home/corentin/Projets/Android/Projets/P4RM/app/src/main/res/drawable-mdpi/sens_trigo_root.xml"
+    },
+    {
+        "merged": "/home/corentin/Projets/Android/Projets/P4RM/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/tab_bg_selected.xml",
+        "source": "/home/corentin/Projets/Android/Projets/P4RM/app/src/main/res/drawable-mdpi/tab_bg_selected.xml"
+    },
+    {
+        "merged": "/home/corentin/Projets/Android/Projets/P4RM/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/tab_bg_selector.xml",
+        "source": "/home/corentin/Projets/Android/Projets/P4RM/app/src/main/res/drawable-mdpi/tab_bg_selector.xml"
+    },
+    {
+        "merged": "/home/corentin/Projets/Android/Projets/P4RM/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/sens_anti_trigo_root.xml",
+        "source": "/home/corentin/Projets/Android/Projets/P4RM/app/src/main/res/drawable-mdpi/sens_anti_trigo_root.xml"
+    },
+    {
+        "merged": "/home/corentin/Projets/Android/Projets/P4RM/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/tab_text_selector.xml",
+        "source": "/home/corentin/Projets/Android/Projets/P4RM/app/src/main/res/drawable-mdpi/tab_text_selector.xml"
+    }
+]

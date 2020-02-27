@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">P4RM</string>
+    <string name="connect">Connecter</string>
+    <string name="disconnect">Déconnecter</string>
+    <string name="tabManuel">Manuel</string>
+    <string name="tabAuto">Auto</string>
+    <string name="tabDebug">Debug</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/corentin/Projets/Android/Projets/P4RM/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5b2ebaccfd1ca56624021a78b0664be23c64f94f">
+        <dex dex="/home/corentin/Projets/Android/Projets/P4RM/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_e19f9ad18350c25feb4871742f4676d4881cdab3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/corentin/Projets/Android/Projets/P4RM/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3ab06c45816e78c5af7fb3a15b216ad7c816622e">
+        <dex dex="/home/corentin/Projets/Android/Projets/P4RM/app/build/intermediates/pre-dexed/debug/instant-run_8b9cba70f6224bfecb1a57656e007629ed444b39.jar" />
+    </item>
+
+</items>
